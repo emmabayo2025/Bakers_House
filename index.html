@@ -200,6 +200,17 @@
       display: none;
     }
 
+    /* Invisible hover bridge to prevent the dropdown from closing when moving the cursor across the gap */
+    .dropdown::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: transparent;
+    }
+
     .nav-item:hover .dropdown {
       display: block;
     }
