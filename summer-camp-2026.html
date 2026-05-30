@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Camp 2026 — Baker's House at Sandy Cove, Maryland</title>
+  <meta name="description"
+    content="Register your daughter for Baker's House Summer Camp 2026 at Sandy Cove, Maryland. A Spirit-led weekend of worship, Scripture, sisterhood, and adventure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --flame: #E8602A;
+      --gold: #F5A623;
+      --cream: #FDF8F1;
+      --ink: #1A1208;
+      --muted: #6B5B45;
+      --border: #E4D9C8;
+      --white: #FFFFFF;
+      --radius: 12px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── BACK LINK ── */
+    .back-bar {
+      background: var(--ink);
+      padding: 10px 24px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cream);
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 500;
+      letter-spacing: .03em;
+      opacity: .85;
+      transition: opacity .2s;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    .back-link svg {
+      flex-shrink: 0;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 72px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 30% 80%, rgba(232, 96, 42, .35) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 75% 20%, rgba(245, 166, 35, .2) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .camp-badge {
+      display: inline-block;
+      background: rgba(232, 96, 42, .18);
+      border: 1px solid rgba(232, 96, 42, .5);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 24px;
+      margin: 28px 0 36px;
+    }
+
+    .meta-pill {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 100px;
+      padding: 7px 16px;
+      font-size: .88rem;
+      font-weight: 500;
+    }
+
+    .meta-pill svg {
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: none;
+      transition: transform .15s, box-shadow .15s, background .15s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--flame);
+      color: #fff;
+      padding: 14px 32px;
+      font-size: 1rem;
+      box-shadow: 0 4px 18px rgba(232, 96, 42, .4);
+    }
+
+    .btn-primary:hover {
+      background: #d45420;
+      box-shadow: 0 6px 24px rgba(232, 96, 42, .55);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255, 255, 255, .4);
+      padding: 12px 28px;
+      font-size: 1rem;
+    }
+
+    .btn-outline-light:hover {
+      border-color: rgba(255, 255, 255, .8);
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    /* ── SECTIONS ── */
+    .section {
+      padding: 72px 24px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .narrow {
+      max-width: 680px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      color: var(--flame);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 580px;
+      font-size: 1.05rem;
+    }
+
+    /* ── DETAILS GRID ── */
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .detail-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 22px;
+    }
+
+    .detail-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .detail-card h3 {
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .detail-card p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    /* ── SCHEDULE ── */
+    .schedule-list {
+      list-style: none;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .schedule-item {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+
+    .schedule-item:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .day-badge {
+      background: var(--ink);
+      color: var(--gold);
+      font-weight: 800;
+      font-size: .8rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border-radius: 8px;
+      padding: 6px 12px;
+      min-width: 60px;
+      text-align: center;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .schedule-item h4 {
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .schedule-item p {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    /* ── WHAT'S INCLUDED ── */
+    .includes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .include-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+
+    .include-check {
+      background: rgba(232, 96, 42, .12);
+      color: var(--flame);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .include-item p {
+      font-size: .93rem;
+      font-weight: 500;
+      padding-top: 3px;
+    }
+
+    /* ── SANDY COVE CALLOUT ── */
+    .venue-callout {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 48px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 640px) {
+      .venue-callout {
+        grid-template-columns: 1fr;
+        padding: 36px 24px;
+      }
+    }
+
+    .venue-callout h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      margin-bottom: 14px;
+    }
+
+    .venue-callout p {
+      color: rgba(255, 255, 255, .75);
+      font-size: .97rem;
+      margin-bottom: 8px;
+    }
+
+    .venue-callout a {
+      color: var(--gold);
+    }
+
+    .venue-map {
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .venue-map .map-label {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: rgba(255, 255, 255, .4);
+      margin-bottom: 8px;
+    }
+
+    .venue-map p {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .venue-map small {
+      color: rgba(255, 255, 255, .55);
+      font-size: .85rem;
+    }
+
+    /* ── SECTION ALT ── */
+    .section-alt {
+      background: var(--white);
+    }
+
+    /* ── FORM ── */
+    .reg-form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      margin-top: 36px;
+    }
+
+    @media (max-width: 600px) {
+      .reg-form {
+        padding: 32px 20px;
+      }
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: .82rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    input,
+    select,
+    textarea {
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-size: .97rem;
+      font-family: inherit;
+      color: var(--ink);
+      background: var(--cream);
+      transition: border-color .2s;
+      width: 100%;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--flame);
+      background: var(--white);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .btn-block {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.05rem;
+      margin-top: 8px;
+      border-radius: 10px;
+    }
+
+    .form-note {
+      font-size: .82rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .form-success {
+      display: none;
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      border-radius: 10px;
+      padding: 18px 20px;
+      color: #166534;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--ink);
+      color: rgba(255, 255, 255, .55);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: .85rem;
+    }
+
+    .site-footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* ── ROBOTICS COLLAB ── */
+    .collab-banner {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #f0f7ff;
+      border: 1.5px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 18px 22px;
+      margin-bottom: 36px;
+    }
+
+    .collab-badge {
+      background: #1e40af;
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .collab-banner p {
+      font-size: .92rem;
+      color: #1e3a8a;
+      margin: 0;
+    }
+
+    .collab-banner a {
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+
+    .robotics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+      margin-top: 36px;
+    }
+
+    @media (max-width: 640px) {
+      .robotics-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .robotics-highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .robotics-highlights li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .robotics-highlights li .rb-icon {
+      background: rgba(232, 96, 42, .12);
+      color: var(--flame);
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .robotics-highlights li p {
+      font-size: .93rem;
+      line-height: 1.5;
+    }
+
+    .robotics-highlights li strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 1px;
+    }
+
+    .tu-card {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 14px;
+      padding: 28px 26px;
+    }
+
+    .tu-card .tu-logo-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .tu-logo-box {
+      background: #f5a623;
+      color: #1A1208;
+      font-weight: 900;
+      font-size: 1rem;
+      border-radius: 8px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: -.02em;
+      flex-shrink: 0;
+    }
+
+    .tu-card h4 {
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+    }
+
+    .tu-card p {
+      font-size: .88rem;
+      color: rgba(255, 255, 255, .7);
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .tu-card a {
+      color: var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .tu-card a:hover {
+      text-decoration: underline;
+    }
+
+    .tu-divider {
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      margin: 16px 0;
+    }
+
+    .tu-meta {
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .5);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="back-bar">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+      Back to Baker's House
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:24px;">
+        <span class="camp-badge">Summer Camp 2026</span>
+        <a href="https://www.towson.edu/fcsm/centers/stem/" target="_blank" rel="noopener" class="camp-badge"
+          style="background:rgba(245,166,35,.18);border:1px solid rgba(245,166,35,.5);color:#F5A623;text-decoration:none;">🤖
+          In partnership with TU Center for STEM Excellence</a>
+      </div>
+      <h1>A weekend to burn<br>brighter for <em>Jesus</em></h1>
+      <p style="color:rgba(255,255,255,.7); max-width:520px; margin:0 auto; font-size:1.05rem;">
+        Baker's House takes over Sandy Cove — a beautiful retreat center on the Chesapeake — for three days of worship,
+        Word, prayer, adventure, and sisterhood your daughter will never forget.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          June 25–27, 2026
+        </span>
+        <span class="meta-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          Sandy Cove, North East, MD
+        </span>
+        <span class="meta-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+          </svg>
+          Girls only · Grades 6–12
+        </span>
+        <span class="meta-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          Screened adult leaders
+        </span>
+      </div>
+      <span class="meta-pill"
+        style="background:rgba(245,166,35,.15);border-color:rgba(245,166,35,.4);color:#F5A623;font-weight:700;">
+        🤖 Robotics Training included
+      </span>
+    </div>
+    <div class="hero-cta">
+      <a href="#register" class="btn btn-primary">Register Now</a>
+      <a href="#details" class="btn btn-outline-light">Camp Details</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- COLLAB STRIP -->
+  <div style="background:#0f172a;padding:28px 24px;">
+    <div
+      style="max-width:960px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;">
+      <div style="display:flex;align-items:center;gap:18px;">
+        <div
+          style="background:#F5A623;color:#1A1208;font-weight:900;font-size:1.1rem;border-radius:10px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          TU</div>
+        <div>
+          <p style="color:#fff;font-weight:700;font-size:1rem;margin:0 0 2px;">Official STEM Partner: TU Center for STEM
+            Excellence</p>
+          <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin:0;">Towson University · K–12 Outreach ·
+            Baltimore Inner Harbor</p>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+        <p style="color:rgba(255,255,255,.75);font-size:.9rem;max-width:340px;margin:0;">Girls will receive hands-on
+          <strong style="color:#F5A623;">robotics training</strong> led by university educators — included free with
+          camp registration.</p>
+        <a href="https://www.towson.edu/fcsm/centers/stem/" target="_blank" rel="noopener"
+          style="color:#F5A623;font-weight:700;font-size:.88rem;white-space:nowrap;text-decoration:none;border:1px solid rgba(245,166,35,.4);padding:8px 16px;border-radius:8px;">Visit
+          TUCSE →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DETAILS -->
+  <section id="details" class="section">
+    <div class="container">
+      <p class="section-label">At a glance</p>
+      <h2 class="section-title">Everything you need to know</h2>
+      <p class="section-intro">Three days. One mission. Girls going deeper with God than they ever have before.</p>
+
+      <div class="details-grid">
+        <div class="detail-card">
+          <div class="detail-icon">📅</div>
+          <h3>Dates</h3>
+          <p>June 25–27, 2026<br><span style="font-weight:400;font-size:.9rem;color:var(--muted)">Check-in Thu. 3 PM ·
+              Departure Sat. noon</span></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">📍</div>
+          <h3>Location</h3>
+          <p>Sandy Cove Ministries<br><span style="font-weight:400;font-size:.9rem;color:var(--muted)">60 Sandy Cove Rd,
+              North East, MD 21901</span></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">👧</div>
+          <h3>Who can attend</h3>
+          <p>Girls · Grades 6–12<br><span style="font-weight:400;font-size:.9rem;color:var(--muted)">Ages 11–18 (verify
+              with your site)</span></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">💰</div>
+          <h3>Registration</h3>
+          <p>Free to attend<br><span style="font-weight:400;font-size:.9rem;color:var(--muted)">No cost — just show up
+              ready to grow</span></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">⏰</div>
+          <h3>Deadline</h3>
+          <p>May 30, 2026<br><span style="font-weight:400;font-size:.9rem;color:var(--muted)">Spots are limited —
+              register early</span></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">✉️</div>
+          <h3>Questions?</h3>
+          <p><a href="/cdn-cgi/l/email-protection#c2aaa7aeaead82a0a3a9a7b0b1aaadb7b1a7afabacabb1b6b0bbecadb0a5"
+              style="color:var(--flame)">Email us</a><br><span
+              style="font-weight:400;font-size:.9rem;color:var(--muted)">We'll reply within 48 hours</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="section section-alt">
+    <div class="container narrow">
+      <p class="section-label">The weekend</p>
+      <h2 class="section-title">Three days that change everything</h2>
+
+      <ul class="schedule-list">
+        <li class="schedule-item">
+          <div class="day-badge">Thu</div>
+          <div>
+            <h4>Arrival &amp; Opening Night</h4>
+            <p>Check in, settle into cabins, meet your tribe. Opening worship and vision night — why we are here.</p>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="day-badge">Fri</div>
+          <div>
+            <h4>Word, Worship &amp; Encounter</h4>
+            <p>Morning devotions and deep-dive teaching on identity in Christ. Extended worship with prayer ministry.
+              Afternoon: Chesapeake waterfront activities. Bonfire at night.</p>
+          </div>
+        </li>
+        <li class="schedule-item">
+          <div class="day-badge">Sat</div>
+          <div>
+            <h4>Intercession, Commissioning &amp; Send-Off</h4>
+            <p>Prayer walk, intercession for schools and families, testimony sharing. Commissioning prayer over every
+              girl. Brunch, packing, hugs, and heading home on fire.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">What's included</p>
+      <h2 class="section-title">Everything she needs for the weekend</h2>
+
+      <div class="includes-grid">
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>All meals (Thu dinner through Sat brunch)</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Cabin lodging at Sandy Cove</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Worship sessions &amp; biblical teaching</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Discipleship small groups</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Prayer ministry &amp; intercession training</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Waterfront &amp; outdoor activities</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Evening bonfires &amp; free time</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Camp t-shirt &amp; take-home materials</p>
+        </div>
+        <div class="include-item">
+          <div class="include-check">✓</div>
+          <p>Trained, background-checked leaders</p>
+        </div>
+        <div class="include-item" style="border-color:#E8602A;background:#fff8f5;">
+          <div class="include-check">🤖</div>
+          <p><strong>Robotics training</strong> with TU Center for STEM Excellence</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ROBOTICS TRAINING -->
+  <section class="section">
+    <div class="container">
+      <div class="collab-banner">
+        <span class="collab-badge">Official Collaboration</span>
+        <p>Baker's House has partnered with the <a href="https://www.towson.edu/fcsm/centers/stem/" target="_blank"
+            rel="noopener">TU Center for STEM Excellence</a> at Towson University to bring hands-on robotics training to
+          Summer Camp 2026.</p>
+      </div>
+
+      <p class="section-label">Special feature</p>
+      <h2 class="section-title">Robotics Training with TU STEM</h2>
+      <p class="section-intro">What if your daughter left camp not just on fire for God — but equipped with real
+        engineering skills? This summer, she gets both.</p>
+
+      <div class="robotics-grid">
+        <ul class="robotics-highlights">
+          <li>
+            <div class="rb-icon">🤖</div>
+            <p><strong>Hands-on robotics sessions</strong>Led by educators from the TU Center for STEM Excellence, girls
+              will build and program robots using real engineering tools and methods.</p>
+          </li>
+          <li>
+            <div class="rb-icon">⚙️</div>
+            <p><strong>No experience needed</strong>Sessions are designed for beginners — curiosity is the only
+              prerequisite. Every girl can engage, regardless of background.</p>
+          </li>
+          <li>
+            <div class="rb-icon">🔬</div>
+            <p><strong>University-backed curriculum</strong>TUCSE serves Maryland's K–12 schools with high-quality STEM
+              programming aligned to state and national standards.</p>
+          </li>
+          <li>
+            <div class="rb-icon">✨</div>
+            <p><strong>Faith &amp; innovation together</strong>We believe God calls women to lead in every field.
+              Robotics training is one more way we equip girls to change the world.</p>
+          </li>
+        </ul>
+
+        <div class="tu-card">
+          <div class="tu-logo-row">
+            <div class="tu-logo-box">TU</div>
+            <h4>TU Center for STEM Excellence</h4>
+          </div>
+          <p>Located in Baltimore's Inner Harbor, TUCSE provides inspirational outreach programs to Maryland's K–12
+            schools — engaging, exciting, and educating students in science, technology, engineering, and math.</p>
+          <hr class="tu-divider">
+          <p class="tu-meta">Towson University · Fisher College of Science &amp; Mathematics<br>701 E. Pratt St., Suite
+            200, Baltimore, MD</p>
+          <p style="margin-top:12px;"><a href="https://www.towson.edu/fcsm/centers/stem/" target="_blank"
+              rel="noopener">Visit TUCSE &rarr;</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SANDY COVE -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="venue-callout">
+        <div>
+          <p class="section-label" style="color:var(--gold)">The venue</p>
+          <h2>Sandy Cove Ministries</h2>
+          <p>Nestled on the banks of the North East River where it meets the Chesapeake Bay, Sandy Cove is one of the
+            most beloved Christian retreat centers on the East Coast — with gorgeous waterfront views, cozy lodges, and
+            an atmosphere built for genuine encounter with God.</p>
+          <p style="margin-top:12px;">60 Sandy Cove Rd, North East, MD 21901 · <a href="https://www.sandycove.org"
+              target="_blank" rel="noopener">sandycove.org</a></p>
+        </div>
+        <div class="venue-map">
+          <p class="map-label">Camp Location</p>
+          <p>Sandy Cove, MD</p>
+          <small>North East River · Chesapeake Bay area<br>Cecil County, Maryland</small>
+          <div style="margin-top:16px;">
+            <a href="https://maps.google.com/?q=Sandy+Cove+Ministries+North+East+MD" target="_blank" rel="noopener"
+              class="btn btn-outline-light" style="font-size:.85rem;padding:9px 18px;">View on Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section id="register" class="section">
+    <div class="container narrow">
+      <p class="section-label">Registration</p>
+      <h2 class="section-title">Reserve your daughter's spot</h2>
+      <p class="section-intro">Spots fill up fast. Registration is completely free — complete the form below and we'll
+        confirm your spot within 2 business days.</p>
+
+      <div class="reg-form" style="padding: 0; background: transparent; border: none;">
+        <!-- Replace the src URL with your published Google Form embed URL -->
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe2mqlywxFNj-lxiOKZ3hAdWet8n2W8fBtK5OKpqUa_ewQI_g/viewform?embedded=true"
+          width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <p style="text-align:center;margin-top:20px;color:var(--muted);font-size:.9rem;">
+        Questions? <a href="/cdn-cgi/l/email-protection#563e333a3a391634373d3324253e392325333b3f383f2522242f78392431"
+          style="color:var(--flame);font-weight:600;"><span class="__cf_email__"
+            data-cfemail="c7afa2ababa887a5a6aca2b5b4afa8b2b4a2aaaea9aeb4b3b5bee9a8b5a0">[email&#160;protected]</span></a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy;
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+      <script>document.write(new Date().getFullYear())</script> Baker's House Ministry · <a href="index.html">Back to
+        main site</a>
+    </p>
+  </footer>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
