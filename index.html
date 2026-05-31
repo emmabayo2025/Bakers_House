@@ -18,12 +18,12 @@
       theme: {
         extend: {
           colors: {
-            'brand-flame': '#6B2D8B',
-            'brand-ember': '#D4A017',
-            'brand-coal': '#1A0A2E',
-            'brand-bark': '#2E1520',
-            'brand-cream': '#FAF5FF',
-            'brand-smoke': '#F3EBF9',
+            'brand-flame': '#8B4513',
+            'brand-ember': '#C47A2B',
+            'brand-coal': '#1A0A02',
+            'brand-bark': '#2E1A08',
+            'brand-cream': '#FDF6EE',
+            'brand-smoke': '#F5EDE0',
             'brand-ash': '#8C7B6E',
           },
           fontFamily: {
@@ -46,14 +46,14 @@
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #1A0A2E;
+      background: radial-gradient(ellipse at bottom right, #7A3B10 0%, #3D1A05 40%, #1A0A02 100%);
     }
     ::-webkit-scrollbar-thumb {
-      background: #6B2D8B;
+      background: #8B4513;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #D4A017;
+      background: #C47A2B;
     }
   </style>
 </head>
@@ -114,7 +114,7 @@
 
         <a href="#stories" class="hover:text-brand-flame transition">Stories</a>
         <a href="#faq" class="hover:text-brand-flame transition">FAQ</a>
-        <a href="summer-camp-2026.html" class="bg-brand-flame px-5 py-2 rounded-full hover:bg-[#4A1A6B] transition text-white">Register</a>
+        <a href="summer-camp-2026.html" class="bg-brand-flame px-5 py-2 rounded-full hover:bg-[#5C2E0A] transition text-white">Register</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -144,7 +144,7 @@
       <a href="#stories" class="block py-2 text-xs uppercase font-medium text-white hover:text-brand-flame transition" onclick="toggleMobileMenu()">Stories</a>
       <a href="#faq" class="block py-2 text-xs uppercase font-medium text-white hover:text-brand-flame transition" onclick="toggleMobileMenu()">FAQ</a>
       
-      <a href="summer-camp-2026.html" class="inline-block mt-3 bg-brand-flame px-5 py-2 rounded-full text-xs uppercase font-medium text-white hover:bg-[#4A1A6B] transition" onclick="toggleMobileMenu()">Register</a>
+      <a href="summer-camp-2026.html" class="inline-block mt-3 bg-brand-flame px-5 py-2 rounded-full text-xs uppercase font-medium text-white hover:bg-[#5C2E0A] transition" onclick="toggleMobileMenu()">Register</a>
     </div>
   </nav>
 
@@ -170,7 +170,7 @@
       </p>
       
       <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
-        <a href="#connect" class="bg-brand-flame text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-wider hover:bg-[#4A1A6B] transition hover:scale-[1.03] active:scale-[0.98] duration-200 shadow-lg shadow-brand-flame/15">
+        <a href="#connect" class="bg-brand-flame text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-wider hover:bg-[#5C2E0A] transition hover:scale-[1.03] active:scale-[0.98] duration-200 shadow-lg shadow-brand-flame/15">
           Plan Your Visit
         </a>
         <a href="summer-camp-2026.html" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold uppercase text-xs tracking-wider hover:bg-white hover:text-brand-coal transition hover:scale-[1.03] active:scale-[0.98] duration-200">
@@ -681,7 +681,7 @@
             
             <textarea name="message" rows="3" placeholder="How can we pray for or support your family?" class="w-full px-5 py-4 rounded-2xl bg-brand-smoke border border-brand-smoke text-brand-coal placeholder-brand-ash focus:outline-none focus:border-brand-flame focus:bg-white transition text-xs font-light resize-none"></textarea>
 
-            <button type="submit" id="connect-submit-btn" class="w-full bg-brand-flame text-white hover:bg-[#4A1A6B] py-3.5 rounded-full font-bold uppercase text-xs tracking-widest hover:scale-[1.01] active:scale-[0.99] transition duration-200 shadow-md shadow-brand-flame/10">
+            <button type="submit" id="connect-submit-btn" class="w-full bg-brand-flame text-white hover:bg-[#5C2E0A] py-3.5 rounded-full font-bold uppercase text-xs tracking-widest hover:scale-[1.01] active:scale-[0.99] transition duration-200 shadow-md shadow-brand-flame/10">
               Submit Connection Request
             </button>
           </form>
