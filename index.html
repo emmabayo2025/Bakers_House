@@ -610,6 +610,37 @@
     }
     .slider-arrow:hover { background: var(--amber); border-color: var(--amber); color: var(--espresso); }
 
+
+    .slide-content-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .slide-left { /* text side */ }
+    .slide-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-video-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 520px;
+      aspect-ratio: 16/9;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.5);
+    }
+    .hero-video-wrap iframe {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; border: none;
+    }
+    @media (max-width: 900px) {
+      .slide-content-split { grid-template-columns: 1fr; }
+      .slide-right { display: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -636,13 +667,26 @@
 
   <div class="slide active">
     <div class="slide-bg slide-bg-1"></div>
-    <div class="slide-content">
-      <span class="slide-eyebrow">Youth · Faith · Leadership</span>
-      <h1 class="slide-title">Where Girls <em>Rise.</em></h1>
-      <p class="slide-lead">Baker's House is a safe, nurturing space dedicated to supporting Black immigrant girls and girls of color — equipping them with confidence, skills, and faith to thrive.</p>
-      <div class="slide-cta">
-        <a href="#connect" class="btn-primary">Get Involved</a>
-        <a href="#about" class="btn-outline">Who We Are</a>
+    <div class="slide-content slide-content-split">
+      <div class="slide-left">
+        <span class="slide-eyebrow">Youth · Faith · Leadership</span>
+        <h1 class="slide-title">Where Girls <em>Rise.</em></h1>
+        <p class="slide-lead">Baker's House is a safe, nurturing space dedicated to supporting Black immigrant girls and girls of color — equipping them with confidence, skills, and faith to thrive.</p>
+        <div class="slide-cta">
+          <a href="#connect" class="btn-primary">Get Involved</a>
+          <a href="summer-camp-2026.html" class="btn-outline">Summer Camp 2026</a>
+        </div>
+      </div>
+      <div class="slide-right">
+        <div class="hero-video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/vP85Ci31iIA?start=9356&autoplay=0&rel=0&modestbranding=1"
+            title="Welcome to Baker's House"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
   </div>
