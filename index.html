@@ -661,13 +661,24 @@
     .program-card-featured h3 { color: var(--white); }
     .program-card-featured p { color: rgba(255,255,255,0.85); }
 
+
+    .nav-logo-img { text-decoration: none; display: flex; align-items: center; }
+    .nav-logo-image {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(1.1);
+      transition: opacity 0.2s;
+    }
+    .nav-logo-img:hover .nav-logo-image { opacity: 0.85; }
+
   </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="#" class="nav-logo">Baker's <span>House</span></a>
+  <a href="#" class="nav-logo-img"><img src="logo.jpg" alt="Baker's House Logo" class="nav-logo-image" /></a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#mandate">Our Mandate</a>
@@ -1051,7 +1062,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="#" class="nav-logo">Baker's <span>House</span></a>
+        <a href="#" class="nav-logo-img"><img src="logo.jpg" alt="Baker's House Logo" class="nav-logo-image" /></a>
         <p>A safe, nurturing space for Black immigrant girls and girls of color to be seen, known, and equipped to thrive — grounded in Christian values.</p>
       </div>
       <div class="footer-col">
