@@ -641,6 +641,26 @@
       .slide-right { display: none; }
     }
 
+
+    .program-card-featured {
+      background-image: url('https://images.unsplash.com/photo-1510525009512-ad7fc13eec51?w=800&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border-top: 3px solid var(--amber);
+      color: var(--white);
+    }
+    .program-card-featured::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, rgba(58,20,5,0.82) 0%, rgba(26,10,2,0.92) 100%);
+      border-radius: inherit;
+      z-index: 0;
+    }
+    .program-card-featured > * { position: relative; z-index: 1; }
+    .program-card-featured h3 { color: var(--white); }
+    .program-card-featured p { color: rgba(255,255,255,0.85); }
+
   </style>
 </head>
 <body>
@@ -853,11 +873,11 @@
     <p class="section-label">What We Offer</p>
     <h2 class="section-title" style="max-width:560px;">Programs Designed to Shape the Whole Girl</h2>
     <div class="programs-grid">
-      <div class="program-card">
+      <div class="program-card program-card-featured">
         <div class="program-card-icon">☀️</div>
         <h3>Summer Camp 2026</h3>
         <p>An immersive summer experience packed with workshops, mentorship sessions, and life-changing community for girls ages 10–18.</p>
-        <a href="summer-camp-2026.html" style="display:inline-block;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--copper);text-decoration:none;">Register Now →</a>
+        <a href="summer-camp-2026.html" style="display:inline-block;margin-top:16px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);text-decoration:none;">Register Now →</a>
       </div>
       <div class="program-card">
         <div class="program-card-icon">🎤</div>
