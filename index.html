@@ -680,7 +680,7 @@
       <div class="slide-right">
         <div class="hero-video-wrap">
           <iframe
-            src="https://www.youtube.com/embed/vP85Ci31iIA?start=9356&autoplay=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/vP85Ci31iIA?start=9356&autoplay=0&rel=0&modestbranding=1&enablejsapi=1"
             title="Welcome to Baker's House"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1082,6 +1082,30 @@
   document.getElementById('prev-slide').addEventListener('click', () => { goTo(current - 1); startTimer(); });
   dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); startTimer(); }));
   startTimer();
+
+  // Pause slider when YouTube video is playing
+  const heroIframe = document.querySelector('.hero-video-wrap iframe');
+  if (heroIframe) {
+    // Listen for messages from YouTube iframe API
+    window.addEventListener('message', function(e) {
+      try {
+        const data = JSON.parse(e.data);
+        if (data.event === 'infoDelivery' && data.info && typeof data.info.playerState !== 'undefined') {
+          if (data.info.playerState === 1) {
+            // Playing — pause slider
+            clearInterval(sliderTimer);
+          } else if (data.info.playerState === 2 || data.info.playerState === 0) {
+            // Paused or ended — resume slider
+            startTimer();
+          }
+        }
+      } catch(err) {}
+    });
+
+    // Also pause on iframe focus (user clicked into video)
+    heroIframe.addEventListener('mouseenter', () => clearInterval(sliderTimer));
+    heroIframe.addEventListener('mouseleave', () => startTimer());
+  }
 
   // Scroll nav
   window.addEventListener('scroll', () => {
